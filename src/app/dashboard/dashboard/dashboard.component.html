@@ -1,0 +1,12 @@
+<div class="input-group">
+    <div id="search-autocomplete" class="form-outline">
+      <input type="search" id="form1" class="form-control" [(ngModel)]="searchValue" />
+    </div>
+    <button type="button" class="btn btn-primary" (click)="searchCity(searchValue)">
+      Search
+    </button>
+  </div>
+<app-citi-data [data]="cityData"></app-citi-data>
+<app-citi-map></app-citi-map>
+<app-hourly-forcast></app-hourly-forcast>
+<app-future-forcast></app-future-forcast>

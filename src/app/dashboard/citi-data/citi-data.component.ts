@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-citi-data',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./citi-data.component.css']
 })
 export class CitiDataComponent {
+  @Input() data:any;
 
 }
